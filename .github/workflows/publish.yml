@@ -86,7 +86,7 @@ jobs:
 
       # === Sign the .crate with cosign (keyless + Sigstore) ===
       - name: Sign .crate with cosign (keyless)
-        uses: sigstore/cosign-installer@v3
+        uses: sigstore/cosign-installer@398d4b0eeef1380460a10c8013a76f728fb906ac # v3.9.1
       - name: Cosign sign the crate
         run: |
           cosign sign-blob --yes \
